@@ -105,6 +105,9 @@ insert into soorteerOPkleur (products_id, kleur_id) values (9,3);
 insert into soorteerOPkleur (products_id, kleur_id) values (10,2);
 insert into soorteerOPkleur (products_id, kleur_id) values (10,9);
 insert into soorteerOPkleur (products_id, kleur_id) values (10,10);
+insert into soorteerOPkleur (products_id, kleur_id) values (11,);
+insert into soorteerOPkleur (products_id, kleur_id) values (12,);
+
 
 
 
