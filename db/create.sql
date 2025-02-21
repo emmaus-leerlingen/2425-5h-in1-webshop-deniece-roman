@@ -8,6 +8,30 @@ CREATE TABLE products (
   name VARCHAR(255),
   description TEXT,
   price NUMERIC(10, 2)
+  kwaliteit_id VARCHAR(20),
+  populariteit_id VARCHAR(20)
+);
+CREATE TABLE kleur (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+kleurNAAM VARCHAR(20)
+);
+
+CREATE TABLE soorteerOPkleur (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  products_id INTEGER,
+  kleur_id INTEGER
+);
+
+CREATE TABLE kwaliteit (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  cijfer_kwaliteit VARCHAR(10),
+  reden_cijfer VARCHAR(20)
+);
+
+CREATE TABLE populariteit (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+hoeveelheid_populariteit VARCHAR(30),
+reden_populariteit VARCHAR(40)
 );
 
 
@@ -37,5 +61,19 @@ insert into products (name, description, code, price) values ('Liverpool shirt u
 
 insert into products (name, description, code, price) values ('PSG shirt thuis', 'Paris Saint Germain thuisshirt van het seizoen 24/25, adviesprijs: 119.99.', '492662523-7', 99.99);
 insert into products (name, description, code, price) values ('PSG shirt uit', 'Paris Saint Germain uitshirt van het seizoen 24/25, adviesprijs: 119.99.', '492662523-8', 99.99);
+
+
+insert into kleur (kleurNAAM) values ('rood/wit');
+insert into kleur (kleurNAAM) values ('zwart');
+insert into kleur (kleurNAAM) values ('rood/wit');
+insert into kleur (kleurNAAM) values ('blauw');
+insert into kleur (kleurNAAM) values ('rood/blauw');
+insert into kleur (kleurNAAM) values ('zwart');
+insert into kleur (kleurNAAM) values ('rood/wit');
+insert into kleur (kleurNAAM) values ('blauw');
+insert into kleur (kleurNAAM) values ('rood');
+insert into kleur (kleurNAAM) values ('zwart');
+insert into kleur (kleurNAAM) values ('blauw');
+insert into kleur (kleurNAAM) values ('wit');
 
 
