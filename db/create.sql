@@ -48,34 +48,34 @@ CREATE TABLE populariteit (
 --
 --
 insert into products (name, description, code, price, kwaliteit_id, populariteit_id) values 
-('Feyenoord shirt thuis', 'Feyenoord thuisshirt van het seizoen 24/25, adviesprijs: 99.99.', '816905633-0', 84.99, '7', '3');
+('Feyenoord shirt thuis', 'Feyenoord thuisshirt van het seizoen 24/25, prima kwaliteit.', '816905633-0', 84.99, '7', '3');
 insert into products (name, description, code, price, kwaliteit_id, populariteit_id) values 
-('Feyenoord shirt uit', 'Feyenoord uitshirt van het seizoen 24/25, adviesprijs: 99.99.', '816905633-1', 84.99, '7', '4');
+('Feyenoord shirt uit', 'Feyenoord uitshirt van het seizoen 24/25, prima kwaliteit.', '816905633-1', 84.99, '7', '4');
 
 insert into products (name, description, code, price, kwaliteit_id, populariteit_id) values 
-('Ajax shirt thuis', 'Ajax thuisshirt van het seizoen 24/25, adviesprijs: 99.99.', '077030122-3', 89.99, '8', '5');
+('Ajax shirt thuis', 'Ajax thuisshirt van het seizoen 24/25, beste club van Nederland.', '077030122-3', 89.99, '8', '5');
 insert into products (name, description, code, price, kwaliteit_id, populariteit_id) values 
-('Ajax shirt uit', 'Ajax uitshirt van het seizoen 24/25, adviesprijs: 99.99.', '077030122-4', 89.99, '8', '5');
+('Ajax shirt uit', 'Ajax uitshirt van het seizoen 24/25, beste club van Nederland.', '077030122-4', 89.99, '8', '5');
 
 insert into products (name, description, code, price, kwaliteit_id, populariteit_id) values 
-('FC Barcelona shirt thuis', 'FC Barcelona thuisshirt van het seizoen 24/25, adviesprijs: 119.99.', '445924201-X', 99.99 , 7 , 4);
+('FC Barcelona shirt thuis', 'FC Barcelona thuisshirt van het seizoen 24/25, een van de mooiste clubs ter wereld.', '445924201-X', 99.99 , 7 , 4);
 insert into products (name, description, code, price, kwaliteit_id, populariteit_id) values 
-('FC Barcelona shirt uit', 'FC Barcelona uitshirt van het seizoen 24/25, adviesprijs: 119.99.', '445924201-Y', 99.99 , 7, 4);
+('FC Barcelona shirt uit', 'FC Barcelona uitshirt van het seizoen 24/25, mooiste uitshirt dit jaar!.', '445924201-Y', 99.99 , 7, 4);
 
 insert into products (name, description, code, price, kwaliteit_id, populariteit_id) values 
-('Sparta Rotterdam shirt thuis', 'Sparta Rotterdam thuisshirt van het seizoen 24/25, adviesprijs: 79.99.', '693155505-7', 59.99 , 10, 6);
+('Sparta Rotterdam shirt thuis', 'Sparta Rotterdam thuisshirt van het seizoen 24/25, mooiste club van Rotterdam.', '693155505-7', 59.99 , 10, 6);
 insert into products (name, description, code, price, kwaliteit_id, populariteit_id) values 
-('Sparta Rotterdam shirt uit', 'Sparta Rotterdam uitshirt van het seizoen 24/25, adviesprijs: 79.99.', '693155505-8', 59.99 , 10, 6);
+('Sparta Rotterdam shirt uit', 'Sparta Rotterdam uitshirt van het seizoen 24/25, mooiste club van Rotterdam.', '693155505-8', 59.99 , 10, 6);
 
 insert into products (name, description, code, price, kwaliteit_id, populariteit_id) values 
-('Liverpool shirt thuis', 'Liverepool thuisshirt van het seizoen 24/25, adviesprijs: 129.99', '686928463-6', 110.00 , 9, 5);
+('Liverpool shirt thuis', 'Liverepool thuisshirt van het seizoen 24/25, een van de beste clubs ter wereld', '686928463-6', 110.00 , 9, 5);
 insert into products (name, description, code, price, kwaliteit_id, populariteit_id) values 
-('Liverpool shirt uit', 'Liverpool uitshirt van het seizoen 24/25, adviesprijs: 129.99.', '686928463-7', 110.00 , 9, 5);
+('Liverpool shirt uit', 'Liverpool uitshirt van het seizoen 24/25, een van de beste clubs ter wereld.', '686928463-7', 110.00 , 9, 5);
 
 insert into products (name, description, code, price, kwaliteit_id, populariteit_id) values 
-('PSG shirt thuis', 'Paris Saint Germain thuisshirt van het seizoen 24/25, adviesprijs: 119.99.', '492662523-7', 99.99, '7', '4');
+('PSG shirt thuis', 'Paris Saint Germain thuisshirt van het seizoen 24/25, beste club uit Frankrijk.', '492662523-7', 99.99, '7', '4');
 insert into products (name, description, code, price, kwaliteit_id, populariteit_id) values 
-('PSG shirt uit', 'Paris Saint Germain uitshirt van het seizoen 24/25, adviesprijs: 119.99.', '492662523-8', 99.99, '7', '4');
+('PSG shirt uit', 'Paris Saint Germain uitshirt van het seizoen 24/25, beste club uit Frankrijk.', '492662523-8', 99.99, '7', '4');
 
 
 insert into kleur (kleurNAAM) values ('rood/wit');
@@ -139,3 +139,12 @@ insert into kwaliteit (cijfer_kwaliteit, reden_cijfer) values ('7/10', 'goede kw
 insert into kwaliteit (cijfer_kwaliteit, reden_cijfer) values ('8/10', 'met de hand gemaakt door een groot bedrijf dat met goede kwaliteit werkt maar onder slechte omstandigheden.');
 insert into kwaliteit (cijfer_kwaliteit, reden_cijfer) values ('9/10', 'met de hand gemaakt door proffessionals in de grootmarkt.');
 insert into kwaliteit (cijfer_kwaliteit, reden_cijfer) values ('10/10', 'een 10 van de 10, heeft geen uitleg nodig!!! alles is perfect');
+
+
+
+insert into populariteit (hoeveelheid_populariteit, reden_populariteit) values ('niet populaire', 'het is niet mooi en wordt weinig verkocht');
+insert into populariteit (hoeveelheid_populariteit, reden_populariteit) values ('beetje populaire', 'het wordt redelijk verkocht');
+insert into populariteit (hoeveelheid_populariteit, reden_populariteit) values ('populaire', 'het is mooi en wordt veel verkocht');
+insert into populariteit (hoeveelheid_populariteit, reden_populariteit) values ('heel populaire', 'het is heel mooi en er wordt heel veel verkocht');
+insert into populariteit (hoeveelheid_populariteit, reden_populariteit) values ('iedereen draagt het', '73% van onze klanten koopt dit shirt');
+insert into populariteit (hoeveelheid_populariteit, reden_populariteit) values ('je kan het niet missen', 'meer de 80% koopt dit shirt');
